@@ -1,5 +1,10 @@
 .main {
-  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.border {
+  border: 1px solid red;
 }
 
 .page {
@@ -13,40 +18,174 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-row_header_text {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-.header {
-  min-height: 600px;
-  max-height: 756px;
-  margin-top: 30px;
-  margin-left: 64px;
 }
 
 .logo {
   width: 228px;
   height: 32px;
+  z-index: 2;
+}
+.logo_place_header {
+  margin-top: 30px;
+  margin-left: 64px;
+  position: absolute;
+}
+.header__title {
+  width: 730px;
+  left: 64px;
+  position: relative;
+  align-self: center;
+  z-index: 2;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 2;
+}
+.header__subtitle_link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+.header__main-illustration {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
   z-index: 1;
+  width: 765px;
+  height: 608px;
 }
 
-.logo_place_header {
+.header__square-pic {
+  width: 568px;
+  height: 568px;
   position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
+}
+.content {
+  position: absolute;
+  width: auto;
+}
+.content__two-columns {
+  position: relative;
+  align-items: center;
+  min-height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.two-columns__brief {
+  position: relative;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  align-self: flex-start;
+}
+.two-columns__main-text {
+  position: relative;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 80%;
+  min-width: 784px;
+}
+.main-text__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+.main-text__paragraph:first-of-type {
+  margin-top: 0;
+}
+.main-text__paragraph {
+  width: 80%;
+}
+.main-text__paragraph_margin-bottom {
+  margin-bottom: 30px;
+}
+.main-text__paragraph__span-accent {
+  font-weight: bold;
+}
+.content-digits {
+}
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+.section-title_position {
+  width: 60%;
+  margin-bottom: 20px;
+  margin: auto auto;
+}
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+.section-subtitle_position {
+  width: 60%;
+  margin: auto auto;
+  margin-top: 20px;
+}
+.table {
+  width: 1100px;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.table_position {
+  margin: auto auto;
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  align-items: flex-start;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.table__text_margin {
+  margin-top: 20px;
 }
