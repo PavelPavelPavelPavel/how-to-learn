@@ -57,8 +57,9 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  margin-left: 64px;
   padding: 0;
+  margin: 0;
+  margin-left: 64px;
 }
 .header__subtitle {
   max-width: 388px;
@@ -106,14 +107,11 @@
 .two-columns {
   position: relative;
   margin-top: 100px;
-  min-width: 784px;
-  justify-content: space-between;
   width: 80%;
+  margin-bottom: 100px;
 }
 .two-columns__brief {
-  display: flex;
-  position: relative;
-  width: 175px;
+  min-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -123,15 +121,15 @@
 }
 .two-columns__main-text {
   position: relative;
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__paragraph {
+  margin: 0;
+  padding-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
-  width: 80%;
-}
-.two-columns__paragraph {
-  align-self: flex-start;
 }
 .two-columns__span-accent {
   font-weight: bold;
@@ -145,7 +143,6 @@
   text-align: center;
   max-width: 60%;
   margin-bottom: 20px;
-  margin: auto auto;
 }
 .section-subtitle {
   margin: 0;
@@ -155,7 +152,6 @@
   font-weight: normal;
   text-align: center;
   max-width: 60%;
-  margin: auto auto;
   margin-top: 20px;
 }
 .table {
@@ -163,14 +159,11 @@
   list-style: none;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0;
-  margin: 0 auto;
-}
-.table_margin_around {
-  margin: auto auto;
 }
 .table__cell {
-  width: 250px;
+  min-width: 250px;
   margin-top: 60px;
 }
 .table__cell {
@@ -247,6 +240,7 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  padding-bottom: 90px;
 }
 
 .table_theme_dark {
@@ -270,11 +264,9 @@
   z-index: 2;
 }
 .table__cell_theme_dark {
-  position: relative;
-  max-width: 200px;
   margin-top: 80px;
   z-index: 2;
-  text-align: start;
+  min-width: 200px;
 }
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
@@ -292,6 +284,7 @@
   position: relative;
   min-height: 350px;
   background-color: #1f1f1f;
+  padding-top: 60px;
 }
 .footer__columns {
   position: relative;
