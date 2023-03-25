@@ -1,9 +1,7 @@
 .resources__logo {
-  width: 270px;
-  height: 38px;
-  display: flex;
   object-fit: cover;
-  justify-content: center;
+  object-position: center;
+  border: 1px solid red;
 }
 .resources__logo:hover {
   opacity: 0.5;

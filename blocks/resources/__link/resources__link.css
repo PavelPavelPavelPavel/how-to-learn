@@ -1,6 +1,5 @@
 .resources__link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  width: 270px;
+  height: 38px;
+  boeder: 1px solid orange;
 }

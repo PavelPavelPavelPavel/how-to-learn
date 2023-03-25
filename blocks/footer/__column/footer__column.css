@@ -4,5 +4,5 @@
   position: relative;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100%;
+  max-height: 100%;
 }
